@@ -70,6 +70,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="imageResources_function.html#fetchFromUrl" class="tsd-kind-icon">fetch<wbr>From<wbr>Url</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="imageResources_function.html#loadImageResource" class="tsd-kind-icon">load<wbr>Image<wbr>Resource</a></li>
 							</ul>
 						</section>
@@ -78,6 +79,42 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="fetchFromUrl" class="tsd-anchor"></a>
+					<h3>fetch<wbr>From<wbr>Url</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">fetch<wbr>From<wbr>Url<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URL</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/af20157/lib/imageResources.function.ts#L18">imageResources.function.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>fetchFromUrl loads remote image content at runtime to provide it for further use in on-screen image search</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>On malformed URL input or in case of non-image remote content</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>url: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URL</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The remote URl to fetch an image from as string or {@link URL}</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="loadImageResource" class="tsd-anchor"></a>
 					<h3>load<wbr>Image<wbr>Resource</h3>
@@ -88,7 +125,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/684ae00/lib/imageResources.function.ts#L4">imageResources.function.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/af20157/lib/imageResources.function.ts#L8">imageResources.function.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -122,6 +159,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="imageResources_function.html#fetchFromUrl" class="tsd-kind-icon">fetch<wbr>From<wbr>Url</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="imageResources_function.html#loadImageResource" class="tsd-kind-icon">load<wbr>Image<wbr>Resource</a>
 					</li>

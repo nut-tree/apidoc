@@ -94,7 +94,9 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="provider_mouse_provider_interface.MouseProviderInterface.html#click" class="tsd-kind-icon">click</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="provider_mouse_provider_interface.MouseProviderInterface.html#currentMousePosition" class="tsd-kind-icon">current<wbr>Mouse<wbr>Position</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="provider_mouse_provider_interface.MouseProviderInterface.html#doubleClick" class="tsd-kind-icon">double<wbr>Click</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="provider_mouse_provider_interface.MouseProviderInterface.html#leftClick" class="tsd-kind-icon">left<wbr>Click</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="provider_mouse_provider_interface.MouseProviderInterface.html#middleClick" class="tsd-kind-icon">middle<wbr>Click</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="provider_mouse_provider_interface.MouseProviderInterface.html#pressButton" class="tsd-kind-icon">press<wbr>Button</a></li>
@@ -114,6 +116,37 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="click" class="tsd-anchor"></a>
+					<h3>click</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">click<span class="tsd-signature-symbol">(</span>btn<span class="tsd-signature-symbol">: </span><a href="../enums/button_enum.Button.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Button</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/af20157/lib/provider/mouse-provider.interface.ts#L34">provider/mouse-provider.interface.ts:34</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>click should allow to perform a single click via OS event</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>btn: <a href="../enums/button_enum.Button.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Button</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The <a href="../enums/button_enum.Button.html">Button</a> to click</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="currentMousePosition" class="tsd-anchor"></a>
 					<h3>current<wbr>Mouse<wbr>Position</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -123,7 +156,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/684ae00/lib/provider/mouse-provider.interface.ts#L27">provider/mouse-provider.interface.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/af20157/lib/provider/mouse-provider.interface.ts#L27">provider/mouse-provider.interface.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -137,6 +170,37 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="doubleClick" class="tsd-anchor"></a>
+					<h3>double<wbr>Click</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">double<wbr>Click<span class="tsd-signature-symbol">(</span>btn<span class="tsd-signature-symbol">: </span><a href="../enums/button_enum.Button.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Button</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/af20157/lib/provider/mouse-provider.interface.ts#L41">provider/mouse-provider.interface.ts:41</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>doubleClick should allow to perform a double click via OS event</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>btn: <a href="../enums/button_enum.Button.html" class="tsd-signature-type" data-tsd-kind="Enumeration">Button</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The <a href="../enums/button_enum.Button.html">Button</a> to click</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="leftClick" class="tsd-anchor"></a>
 					<h3>left<wbr>Click</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -146,13 +210,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/684ae00/lib/provider/mouse-provider.interface.ts#L32">provider/mouse-provider.interface.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/af20157/lib/provider/mouse-provider.interface.ts#L48">provider/mouse-provider.interface.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>leftClick should allow to perform a left click via OS event</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>Will be deprecated with the next major release, use <code>click</code> instead</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
@@ -168,13 +237,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/684ae00/lib/provider/mouse-provider.interface.ts#L42">provider/mouse-provider.interface.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/af20157/lib/provider/mouse-provider.interface.ts#L62">provider/mouse-provider.interface.ts:62</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>middleClick should allow to perform a middle click via OS event</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>Will be deprecated with the next major release, use <code>click</code> instead</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
@@ -190,7 +264,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/684ae00/lib/provider/mouse-provider.interface.ts#L77">provider/mouse-provider.interface.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/af20157/lib/provider/mouse-provider.interface.ts#L97">provider/mouse-provider.interface.ts:97</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -221,7 +295,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/684ae00/lib/provider/mouse-provider.interface.ts#L84">provider/mouse-provider.interface.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/af20157/lib/provider/mouse-provider.interface.ts#L104">provider/mouse-provider.interface.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -252,13 +326,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/684ae00/lib/provider/mouse-provider.interface.ts#L37">provider/mouse-provider.interface.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/af20157/lib/provider/mouse-provider.interface.ts#L55">provider/mouse-provider.interface.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>rightClick should allow to perform a right click via OS event</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>Will be deprecated with the next major release, use <code>click</code> instead</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
@@ -274,7 +353,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/684ae00/lib/provider/mouse-provider.interface.ts#L56">provider/mouse-provider.interface.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/af20157/lib/provider/mouse-provider.interface.ts#L76">provider/mouse-provider.interface.ts:76</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -305,7 +384,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/684ae00/lib/provider/mouse-provider.interface.ts#L63">provider/mouse-provider.interface.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/af20157/lib/provider/mouse-provider.interface.ts#L83">provider/mouse-provider.interface.ts:83</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -336,7 +415,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/684ae00/lib/provider/mouse-provider.interface.ts#L70">provider/mouse-provider.interface.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/af20157/lib/provider/mouse-provider.interface.ts#L90">provider/mouse-provider.interface.ts:90</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -367,7 +446,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/684ae00/lib/provider/mouse-provider.interface.ts#L49">provider/mouse-provider.interface.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/af20157/lib/provider/mouse-provider.interface.ts#L69">provider/mouse-provider.interface.ts:69</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -398,7 +477,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/684ae00/lib/provider/mouse-provider.interface.ts#L13">provider/mouse-provider.interface.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/af20157/lib/provider/mouse-provider.interface.ts#L13">provider/mouse-provider.interface.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -429,7 +508,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/684ae00/lib/provider/mouse-provider.interface.ts#L20">provider/mouse-provider.interface.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/af20157/lib/provider/mouse-provider.interface.ts#L20">provider/mouse-provider.interface.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -471,7 +550,13 @@
 						<a href="provider_mouse_provider_interface.MouseProviderInterface.html" class="tsd-kind-icon">Mouse<wbr>Provider<wbr>Interface</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="provider_mouse_provider_interface.MouseProviderInterface.html#click" class="tsd-kind-icon">click</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="provider_mouse_provider_interface.MouseProviderInterface.html#currentMousePosition" class="tsd-kind-icon">current<wbr>Mouse<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="provider_mouse_provider_interface.MouseProviderInterface.html#doubleClick" class="tsd-kind-icon">double<wbr>Click</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="provider_mouse_provider_interface.MouseProviderInterface.html#leftClick" class="tsd-kind-icon">left<wbr>Click</a>
