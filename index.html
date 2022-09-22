@@ -173,13 +173,20 @@ It&#39;s work in progress and will undergo constant modification.</p>
 You can install them by running</p>
 <pre><code class="language-bash"><span class="hl-1">xcode-select --install</span>
 </code></pre>
+<p><strong>Permissions</strong>:</p>
+<p>nut.js requires the executing application, e.g. your terminal, to be given both <code>Accessibility</code> and <code>Screen Recording</code> permissions.</p>
+<p>Starting with release <code>2.3.0</code>, nut.js will check for and request these permissions automatically:</p>
+<p align="center">
+    <img src="https://github.com/nut-tree/nut.js/raw/develop/.gfx/permissions_popup.png" alt="Popup requesting screen recording permissions"/>
+</p>
+
+<p>It will also give you a subtle hint in case permissions are lacking:</p>
+<ul>
+<li>Accessibility: <code>##### WARNING! The application running this script is not a trusted process! Please visit https://github.com/nut-tree/nut.js#macos #####</code></li>
+<li>Screen Recording: <code>##### WARNING! The application running this script is not allowed to capture screen content! Please visit https://github.com/nut-tree/nut.js#macos #####</code></li>
+</ul>
 <p><strong>Attention</strong>:</p>
-<p>In case you&#39;re experiencing problems like your mouse not moving or your keyboard not typing,
-please make sure to give the process you&#39;re executing your tests with accessibility permissions.</p>
-<p>nut.js will give you a subtle hint in case permissions are lacking:</p>
-<p><code>##### WARNING! The application running this script is not a trusted process! Please visit https://github.com/nut-tree/nut.js#macos #####</code></p>
-<p>When an application wants to use accessibility features, a permission pop-up should be shown.
-If not, you could try to manually add the application you&#39;re running the script from.</p>
+<p>Prior to release <code>2.3.0</code> you&#39;ll have to grant these permissions manually.</p>
 <p><code>Settings -&gt; Security &amp; Privacy -&gt; Privacy tab -&gt; Accessibility -&gt; Add...</code></p>
 <p>For example, if you want to execute your node script in e.g. <code>iTerm2</code>, you&#39;d have to add <code>iTerm.app</code> to the list.
 When running your script from a built-in terminal in e.g. <code>VSCode</code> or <code>IntelliJ</code>, you&#39;d have to add the respective IDE.</p>
