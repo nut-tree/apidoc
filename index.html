@@ -14,10 +14,22 @@
 <a href="#nutjs-native-ui-toolkit" id="nutjs-native-ui-toolkit" style="color: inherit; text-decoration: none;">
   <h1>nut.js (Native UI Toolkit)</h1>
 </a>
-<p>|	|GitHub Actions|
-|:-:	|:-:	|
-|Master |<img src="https://github.com/nut-tree/nut.js/workflows/Create%20tagged%20release/badge.svg" alt="Create tagged release">|
-|Develop|<img src="https://github.com/nut-tree/nut.js/workflows/Create%20snapshot%20release/badge.svg" alt="Create snapshot release">|</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">GitHub Actions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Master</td>
+<td align="center"><img src="https://github.com/nut-tree/nut.js/workflows/Create%20tagged%20release/badge.svg" alt="Create tagged release"></td>
+</tr>
+<tr>
+<td align="center">Develop</td>
+<td align="center"><img src="https://github.com/nut-tree/nut.js/workflows/Create%20snapshot%20release/badge.svg" alt="Create snapshot release"></td>
+</tr>
+</tbody></table>
 <p><a href="https://sonarcloud.io/dashboard?id=nut-tree%3Anut.js"><img src="https://sonarcloud.io/api/project_badges/measure?project=nut-tree%3Anut.js&metric=alert_status" alt="SonarCloud badge"></a>
 <a href="https://sonarcloud.io/component_measures?id=nut-tree%3Anut.js&amp;metric=coverage"><img src="https://sonarcloud.io/api/project_badges/measure?project=nut-tree%3Anut.js&metric=coverage" alt="SonarCloud Coverage"></a></p>
 <p><a href="https://www.npmjs.com/package/@nut-tree/nut-js"><img src="https://img.shields.io/npm/dm/@nut-tree/nut-js" alt="Downloads per month"></a>
@@ -50,12 +62,6 @@ but additionally gives you the possibility to navigate the screen based on image
 </a>
 <p><code>nut.js</code> is developed with community in mind.</p>
 <p>A huge <strong>&quot;Thank you!&quot;</strong> goes out to all sponsors who make open source a bit more sustainable!</p>
-<p><a href="https://github.com/Reiss-Cashmore"><img src="https://avatars.githubusercontent.com/u/17616211?v=4" width="75" alt="Reiss Cashmore" /></a>
-<a href="https://github.com/ccorcos"><img src="https://avatars.githubusercontent.com/u/1794527?v=4" width="75" alt="Chet Corcos" /></a>
-<a href="https://github.com/stoefln"><img src="https://avatars.githubusercontent.com/u/562800?v=4" width="75" alt="Stephan Petzl" /></a></p>
-<hr/>
-
-<p><a href="https://www.mightyapp.com"><img src="https://github.com/nut-tree/nut.js/raw/develop/.gfx/sponsors/mighty.svg" height="75" alt="Mighty browser logo"/></a></p>
 
 <a href="#demo" id="demo" style="color: inherit; text-decoration: none;">
   <h1>Demo</h1>
@@ -129,13 +135,17 @@ It&#39;s work in progress and will undergo constant modification.</p>
   <h2>Screen</h2>
 </a>
 <ul>
-<li><input checked="" disabled="" type="checkbox"> Find an image on screen (requires an additional provider package like e.g. <a href="https://www.npmjs.com/package/@nut-tree/template-matcher">nut-tree/template-matcher</a>)</li>
-<li><input checked="" disabled="" type="checkbox"> Find all image occurrences on screen</li>
-<li><input checked="" disabled="" type="checkbox"> Wait for an image to appear on screen (requires an additional provider package like e.g. <a href="https://www.npmjs.com/package/@nut-tree/template-matcher">nut-tree/template-matcher</a>)</li>
 <li><input checked="" disabled="" type="checkbox"> Retrieve RGBA color information on screen</li>
-<li><input checked="" disabled="" type="checkbox"> Hooks to trigger actions based on images (requires an additional provider package like e.g. <a href="https://www.npmjs.com/package/@nut-tree/template-matcher">nut-tree/template-matcher</a>)</li>
 <li><input checked="" disabled="" type="checkbox"> Highlighting screen regions</li>
+<li><input checked="" disabled="" type="checkbox"> Find a single or multiple occurrences of an image on screen (requires an additional provider package like e.g. <a href="https://www.npmjs.com/package/@nut-tree/template-matcher">nut-tree/template-matcher</a>)</li>
+<li><input checked="" disabled="" type="checkbox"> Wait for an image to appear on screen (requires an additional provider package like e.g. <a href="https://www.npmjs.com/package/@nut-tree/template-matcher">nut-tree/template-matcher</a>)</li>
+<li><input checked="" disabled="" type="checkbox"> Find a single or multiple occurrences of text on screen (*)</li>
+<li><input checked="" disabled="" type="checkbox"> Wait for a piece of text to appear on screen (*)</li>
+<li><input checked="" disabled="" type="checkbox"> Find a single or multiple windows on screen (*)</li>
+<li><input checked="" disabled="" type="checkbox"> Wait for a window to appear on screen (*)</li>
+<li><input checked="" disabled="" type="checkbox"> Hooks to trigger actions based on detected text, images or windows (*)</li>
 </ul>
+<p>(*) Requires an additional provider package, visit <a href="https://nutjs.dev">nutjs.dev</a> for more info</p>
 
 <a href="#integration" id="integration" style="color: inherit; text-decoration: none;">
   <h2>Integration</h2>
@@ -143,13 +153,14 @@ It&#39;s work in progress and will undergo constant modification.</p>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> Jest</li>
 <li><input checked="" disabled="" type="checkbox"> Electron</li>
+<li><input checked="" disabled="" type="checkbox"> Custom log integration</li>
 </ul>
 
 <a href="#sample" id="sample" style="color: inherit; text-decoration: none;">
   <h1>Sample</h1>
 </a>
-<p>The following snippet shows a valid <code>nut.js</code> example:</p>
-<pre><code class="language-js"><span class="hl-0">&quot;use strict&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-2">const</span><span class="hl-1"> { </span><span class="hl-3">mouse</span><span class="hl-1">, </span><span class="hl-3">left</span><span class="hl-1">, </span><span class="hl-3">right</span><span class="hl-1">, </span><span class="hl-3">up</span><span class="hl-1">, </span><span class="hl-3">down</span><span class="hl-1">, </span><span class="hl-3">straightTo</span><span class="hl-1">, </span><span class="hl-3">centerOf</span><span class="hl-1">, </span><span class="hl-3">Region</span><span class="hl-1">} = </span><span class="hl-4">require</span><span class="hl-1">(</span><span class="hl-0">&quot;@nut-tree/nut-js&quot;</span><span class="hl-1">);</span><br/><br/><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-4">square</span><span class="hl-1"> = </span><span class="hl-2">async</span><span class="hl-1"> () </span><span class="hl-2">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-5">await</span><span class="hl-1"> </span><span class="hl-6">mouse</span><span class="hl-1">.</span><span class="hl-4">move</span><span class="hl-1">(</span><span class="hl-4">right</span><span class="hl-1">(</span><span class="hl-7">500</span><span class="hl-1">));</span><br/><span class="hl-1">  </span><span class="hl-5">await</span><span class="hl-1"> </span><span class="hl-6">mouse</span><span class="hl-1">.</span><span class="hl-4">move</span><span class="hl-1">(</span><span class="hl-4">down</span><span class="hl-1">(</span><span class="hl-7">500</span><span class="hl-1">));</span><br/><span class="hl-1">  </span><span class="hl-5">await</span><span class="hl-1"> </span><span class="hl-6">mouse</span><span class="hl-1">.</span><span class="hl-4">move</span><span class="hl-1">(</span><span class="hl-4">left</span><span class="hl-1">(</span><span class="hl-7">500</span><span class="hl-1">));</span><br/><span class="hl-1">  </span><span class="hl-5">await</span><span class="hl-1"> </span><span class="hl-6">mouse</span><span class="hl-1">.</span><span class="hl-4">move</span><span class="hl-1">(</span><span class="hl-4">up</span><span class="hl-1">(</span><span class="hl-7">500</span><span class="hl-1">));</span><br/><span class="hl-1">};</span><br/><br/><span class="hl-1">(</span><span class="hl-2">async</span><span class="hl-1"> () </span><span class="hl-2">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-5">await</span><span class="hl-1"> </span><span class="hl-4">square</span><span class="hl-1">();</span><br/><span class="hl-1">    </span><span class="hl-5">await</span><span class="hl-1"> </span><span class="hl-6">mouse</span><span class="hl-1">.</span><span class="hl-4">move</span><span class="hl-1">(</span><br/><span class="hl-1">        </span><span class="hl-4">straightTo</span><span class="hl-1">(</span><br/><span class="hl-1">            </span><span class="hl-4">centerOf</span><span class="hl-1">(</span><br/><span class="hl-1">                </span><span class="hl-2">new</span><span class="hl-1"> </span><span class="hl-4">Region</span><span class="hl-1">(</span><span class="hl-7">100</span><span class="hl-1">, </span><span class="hl-7">100</span><span class="hl-1">, </span><span class="hl-7">200</span><span class="hl-1">, </span><span class="hl-7">300</span><span class="hl-1">)</span><br/><span class="hl-1">            )</span><br/><span class="hl-1">        )</span><br/><span class="hl-1">    );</span><br/><span class="hl-1">})();</span>
+<p>The following snippet shows a valid <code>nut.js</code> example (using multiple addons):</p>
+<pre><code class="language-js"><span class="hl-0">&quot;use strict&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-2">const</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-3">mouse</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-3">screen</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-3">singleWord</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-3">sleep</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-3">useConsoleLogger</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-3">ConsoleLogLevel</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-3">straightTo</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-3">centerOf</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-3">Button</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-3">getActiveWindow</span><span class="hl-1">,</span><br/><span class="hl-1">} = </span><span class="hl-4">require</span><span class="hl-1">(</span><span class="hl-0">&quot;@nut-tree/nut-js&quot;</span><span class="hl-1">);</span><br/><span class="hl-2">const</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-3">preloadLanguages</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-3">Language</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-3">LanguageModelType</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-3">configure</span><span class="hl-1">,</span><br/><span class="hl-1">} = </span><span class="hl-4">require</span><span class="hl-1">(</span><span class="hl-0">&quot;@nut-tree/plugin-ocr&quot;</span><span class="hl-1">);</span><br/><br/><span class="hl-4">configure</span><span class="hl-1">({ </span><span class="hl-5">languageModelType:</span><span class="hl-1"> </span><span class="hl-5">LanguageModelType</span><span class="hl-1">.</span><span class="hl-3">BEST</span><span class="hl-1"> });</span><br/><br/><span class="hl-4">useConsoleLogger</span><span class="hl-1">({ </span><span class="hl-5">logLevel:</span><span class="hl-1"> </span><span class="hl-5">ConsoleLogLevel</span><span class="hl-1">.</span><span class="hl-3">DEBUG</span><span class="hl-1"> });</span><br/><br/><span class="hl-5">screen</span><span class="hl-1">.</span><span class="hl-5">config</span><span class="hl-1">.</span><span class="hl-5">autoHighlight</span><span class="hl-1"> = </span><span class="hl-2">true</span><span class="hl-1">;</span><br/><span class="hl-5">screen</span><span class="hl-1">.</span><span class="hl-5">config</span><span class="hl-1">.</span><span class="hl-5">ocrConfidence</span><span class="hl-1"> = </span><span class="hl-6">0.8</span><span class="hl-1">;</span><br/><br/><span class="hl-2">function</span><span class="hl-1"> </span><span class="hl-4">activeWindowRegion</span><span class="hl-1">() {</span><br/><span class="hl-1">  </span><span class="hl-7">return</span><span class="hl-1"> </span><span class="hl-4">getActiveWindow</span><span class="hl-1">().</span><span class="hl-4">then</span><span class="hl-1">((</span><span class="hl-5">activeWindow</span><span class="hl-1">) </span><span class="hl-2">=&gt;</span><span class="hl-1"> </span><span class="hl-5">activeWindow</span><span class="hl-1">.</span><span class="hl-5">region</span><span class="hl-1">);</span><br/><span class="hl-1">}</span><br/><br/><span class="hl-1">(</span><span class="hl-2">async</span><span class="hl-1"> () </span><span class="hl-2">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-7">await</span><span class="hl-1"> </span><span class="hl-4">preloadLanguages</span><span class="hl-1">([</span><span class="hl-5">Language</span><span class="hl-1">.</span><span class="hl-5">English</span><span class="hl-1">], [</span><span class="hl-5">LanguageModelType</span><span class="hl-1">.</span><span class="hl-3">BEST</span><span class="hl-1">]);</span><br/><span class="hl-1">  </span><span class="hl-7">await</span><span class="hl-1"> </span><span class="hl-4">sleep</span><span class="hl-1">(</span><span class="hl-6">5000</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">result</span><span class="hl-1"> = </span><span class="hl-7">await</span><span class="hl-1"> </span><span class="hl-5">screen</span><span class="hl-1">.</span><span class="hl-4">find</span><span class="hl-1">(</span><span class="hl-4">singleWord</span><span class="hl-1">(</span><span class="hl-0">&quot;@nut-tree/nut-js&quot;</span><span class="hl-1">));</span><br/><span class="hl-1">  </span><span class="hl-7">await</span><span class="hl-1"> </span><span class="hl-5">mouse</span><span class="hl-1">.</span><span class="hl-4">move</span><span class="hl-1">(</span><span class="hl-4">straightTo</span><span class="hl-1">(</span><span class="hl-4">centerOf</span><span class="hl-1">(</span><span class="hl-5">result</span><span class="hl-1">)));</span><br/><span class="hl-1">  </span><span class="hl-7">await</span><span class="hl-1"> </span><span class="hl-5">mouse</span><span class="hl-1">.</span><span class="hl-4">click</span><span class="hl-1">(</span><span class="hl-5">Button</span><span class="hl-1">.</span><span class="hl-3">LEFT</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-7">await</span><span class="hl-1"> </span><span class="hl-5">screen</span><span class="hl-1">.</span><span class="hl-4">waitFor</span><span class="hl-1">(</span><span class="hl-4">singleWord</span><span class="hl-1">(</span><span class="hl-0">&quot;Native&quot;</span><span class="hl-1">), </span><span class="hl-6">15000</span><span class="hl-1">, </span><span class="hl-6">1000</span><span class="hl-1">, {</span><br/><span class="hl-1">    </span><span class="hl-5">providerData:</span><span class="hl-1"> { </span><span class="hl-5">partialMatch:</span><span class="hl-1"> </span><span class="hl-2">true</span><span class="hl-1"> },</span><br/><span class="hl-1">  });</span><br/><span class="hl-1">  </span><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">content</span><span class="hl-1"> = </span><span class="hl-7">await</span><span class="hl-1"> </span><span class="hl-5">screen</span><span class="hl-1">.</span><span class="hl-4">read</span><span class="hl-1">({ </span><span class="hl-5">searchRegion:</span><span class="hl-1"> </span><span class="hl-4">activeWindowRegion</span><span class="hl-1">() });</span><br/><span class="hl-1">  </span><span class="hl-5">console</span><span class="hl-1">.</span><span class="hl-4">log</span><span class="hl-1">(</span><span class="hl-5">content</span><span class="hl-1">);</span><br/><span class="hl-1">})();</span>
 </code></pre>
 
 <a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
@@ -211,7 +222,7 @@ When running your script from a built-in terminal in e.g. <code>VSCode</code> or
 <a href="#install-nutjs" id="install-nutjs" style="color: inherit; text-decoration: none;">
   <h2>Install <code>nut.js</code></h2>
 </a>
-<p>Running </p>
+<p>Running</p>
 <pre><code class="language-bash"><span class="hl-1">npm i @nut-tree/nut-js</span>
 </code></pre>
 <p>or</p>
@@ -223,7 +234,7 @@ When running your script from a built-in terminal in e.g. <code>VSCode</code> or
   <h3>Snapshot releases</h3>
 </a>
 <p><code>nut.js</code> also provides snapshot releases which allows to test upcoming features.</p>
-<p>Running </p>
+<p>Running</p>
 <pre><code class="language-bash"><span class="hl-1">npm i @nut-tree/nut-js@next</span>
 </code></pre>
 <p>or</p>
@@ -266,6 +277,7 @@ Please bear in mind that things might change and / or break on snapshot releases
 <li class="tsd-kind-module"><a href="modules/key_enum.html">key.enum</a></li>
 <li class="tsd-kind-module"><a href="modules/keyboard_class.html">keyboard.class</a></li>
 <li class="tsd-kind-module"><a href="modules/location_function.html">location.function</a></li>
+<li class="tsd-kind-module"><a href="modules/logging_function.html">logging.function</a></li>
 <li class="tsd-kind-module"><a href="modules/match_request_class.html">match-<wbr/>request.class</a></li>
 <li class="tsd-kind-module"><a href="modules/match_result_class.html">match-<wbr/>result.class</a></li>
 <li class="tsd-kind-module"><a href="modules/mouse_movement_function.html">mouse-<wbr/>movement.function</a></li>
@@ -287,6 +299,9 @@ Please bear in mind that things might change and / or break on snapshot releases
 <li class="tsd-kind-module"><a href="modules/provider_io_jimp_image_reader_class.html">provider/io/jimp-<wbr/>image-<wbr/>reader.class</a></li>
 <li class="tsd-kind-module"><a href="modules/provider_io_jimp_image_writer_class.html">provider/io/jimp-<wbr/>image-<wbr/>writer.class</a></li>
 <li class="tsd-kind-module"><a href="modules/provider_keyboard_provider_interface.html">provider/keyboard-<wbr/>provider.interface</a></li>
+<li class="tsd-kind-module"><a href="modules/provider_log_provider_interface.html">provider/log-<wbr/>provider.interface</a></li>
+<li class="tsd-kind-module"><a href="modules/provider_log_console_log_provider_class.html">provider/log/console-<wbr/>log-<wbr/>provider.class</a></li>
+<li class="tsd-kind-module"><a href="modules/provider_log_noop_log_provider_class.html">provider/log/noop-<wbr/>log-<wbr/>provider.class</a></li>
 <li class="tsd-kind-module"><a href="modules/provider_mouse_provider_interface.html">provider/mouse-<wbr/>provider.interface</a></li>
 <li class="tsd-kind-module"><a href="modules/provider_native_clipboardy_clipboard_class.html">provider/native/clipboardy-<wbr/>clipboard.class</a></li>
 <li class="tsd-kind-module"><a href="modules/provider_native_libnut_keyboard_class.html">provider/native/libnut-<wbr/>keyboard.class</a></li>
@@ -295,13 +310,15 @@ Please bear in mind that things might change and / or break on snapshot releases
 <li class="tsd-kind-module"><a href="modules/provider_native_libnut_window_class.html">provider/native/libnut-<wbr/>window.class</a></li>
 <li class="tsd-kind-module"><a href="modules/provider_provider_registry_class.html">provider/provider-<wbr/>registry.class</a></li>
 <li class="tsd-kind-module"><a href="modules/provider_screen_provider_interface.html">provider/screen-<wbr/>provider.interface</a></li>
+<li class="tsd-kind-module"><a href="modules/provider_text_finder_interface.html">provider/text-<wbr/>finder.interface</a></li>
+<li class="tsd-kind-module"><a href="modules/provider_window_finder_interface.html">provider/window-<wbr/>finder.interface</a></li>
 <li class="tsd-kind-module"><a href="modules/provider_window_provider_interface.html">provider/window-<wbr/>provider.interface</a></li>
+<li class="tsd-kind-module"><a href="modules/query_class.html">query.class</a></li>
 <li class="tsd-kind-module"><a href="modules/region_class.html">region.class</a></li>
 <li class="tsd-kind-module"><a href="modules/rgba_class.html">rgba.class</a></li>
 <li class="tsd-kind-module"><a href="modules/scaled_match_result_class.html">scaled-<wbr/>match-<wbr/>result.class</a></li>
 <li class="tsd-kind-module"><a href="modules/screen_class.html">screen.class</a></li>
 <li class="tsd-kind-module"><a href="modules/sleep_function.html">sleep.function</a></li>
-<li class="tsd-kind-module"><a href="modules/typings.html">typings</a></li>
 <li class="tsd-kind-module"><a href="modules/util_bresenham_class.html">util/bresenham.class</a></li>
 <li class="tsd-kind-module"><a href="modules/util_linehelper_class.html">util/linehelper.class</a></li>
 <li class="tsd-kind-module"><a href="modules/util_timeout_function.html">util/timeout.function</a></li>

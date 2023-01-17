@@ -22,7 +22,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">ScreenClass</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/bfebdca/lib/screen.class.ts#L34">screen.class.ts:34</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L113">screen.class.ts:113</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -56,7 +56,7 @@
 <section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_ScreenClass">new <wbr/>Screen<wbr/>Class<span class="tsd-signature-symbol">(</span>providerRegistry<span class="tsd-signature-symbol">: </span><a href="../interfaces/provider_provider_registry_class.ProviderRegistry.html" class="tsd-signature-type" data-tsd-kind="Interface">ProviderRegistry</a>, findHooks<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol">, </span><a href="../types/screen_class.FindHookCallback.html" class="tsd-signature-type" data-tsd-kind="Type alias">FindHookCallback</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="screen_class.ScreenClass.html" class="tsd-signature-type" data-tsd-kind="Class">ScreenClass</a><a href="#constructor.new_ScreenClass" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_ScreenClass">new <wbr/>Screen<wbr/>Class<span class="tsd-signature-symbol">(</span>providerRegistry<span class="tsd-signature-symbol">: </span><a href="../interfaces/provider_provider_registry_class.ProviderRegistry.html" class="tsd-signature-type" data-tsd-kind="Interface">ProviderRegistry</a>, findHooks<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/screen_class.FindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">FindInput</a><span class="tsd-signature-symbol">, </span><a href="../types/screen_class.FindHookCallback.html" class="tsd-signature-type" data-tsd-kind="Type alias">FindHookCallback</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="screen_class.ScreenClass.html" class="tsd-signature-type" data-tsd-kind="Class">ScreenClass</a><a href="#constructor.new_ScreenClass" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p><a href="screen_class.ScreenClass.html">ScreenClass</a> class constructor</p>
 </div>
@@ -68,44 +68,19 @@
 <div class="tsd-comment tsd-typography"><p>A ProviderRegistry used to access underlying implementations</p>
 </div></li>
 <li>
-<h5>findHooks: <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol">, </span><a href="../types/screen_class.FindHookCallback.html" class="tsd-signature-type" data-tsd-kind="Type alias">FindHookCallback</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></h5>
+<h5>findHooks: <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/screen_class.FindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">FindInput</a><span class="tsd-signature-symbol">, </span><a href="../types/screen_class.FindHookCallback.html" class="tsd-signature-type" data-tsd-kind="Type alias">FindHookCallback</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></h5>
 <div class="tsd-comment tsd-typography"><p>A Map of <a href="../types/screen_class.FindHookCallback.html">FindHookCallback</a> methods assigned to a template image</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="screen_class.ScreenClass.html" class="tsd-signature-type" data-tsd-kind="Class">ScreenClass</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/bfebdca/lib/screen.class.ts#L70">screen.class.ts:70</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L127">screen.class.ts:127</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="config" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>config</span><a href="#config" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>autoHighlight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>confidence<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>highlightDurationMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>highlightOpacity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>resourceDirectory<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
-<div class="tsd-comment tsd-typography"><p>Config object for <a href="screen_class.ScreenClass.html">ScreenClass</a> class</p>
-</div>
-<div class="tsd-type-declaration">
-<h4>Type declaration</h4>
-<ul class="tsd-parameters">
-<li class="tsd-parameter">
-<h5>auto<wbr/>Highlight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-<div class="tsd-comment tsd-typography"><p>Configure whether to auto highlight all search results or not</p>
-</div></li>
-<li class="tsd-parameter">
-<h5>confidence<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>Configures the required matching percentage for template images to be declared as a match</p>
-</div></li>
-<li class="tsd-parameter">
-<h5>highlight<wbr/>Duration<wbr/>Ms<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>Configure highlighting duration</p>
-</div></li>
-<li class="tsd-parameter">
-<h5>highlight<wbr/>Opacity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>Configure opacity of highlight window</p>
-</div></li>
-<li class="tsd-parameter">
-<h5>resource<wbr/>Directory<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>Configures the path from which template images are loaded from</p>
-</div></li></ul></div><aside class="tsd-sources">
+<div class="tsd-signature">config<span class="tsd-signature-symbol">:</span> <a href="../interfaces/screen_class.ScreenConfig.html" class="tsd-signature-type" data-tsd-kind="Interface">ScreenConfig</a><span class="tsd-signature-symbol"> = ...</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/bfebdca/lib/screen.class.ts#L39">screen.class.ts:39</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L114">screen.class.ts:114</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="capture" class="tsd-anchor"></a>
@@ -140,7 +115,7 @@
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/bfebdca/lib/screen.class.ts#L256">screen.class.ts:256</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L514">screen.class.ts:514</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="captureRegion" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>capture<wbr/>Region</span><a href="#captureRegion" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -177,7 +152,7 @@
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/bfebdca/lib/screen.class.ts#L291">screen.class.ts:291</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L568">screen.class.ts:568</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="colorAt" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>color<wbr/>At</span><a href="#colorAt" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -194,49 +169,120 @@
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="rgba_class.RGBA.html" class="tsd-signature-type" data-tsd-kind="Class">RGBA</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/bfebdca/lib/screen.class.ts#L327">screen.class.ts:327</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L641">screen.class.ts:641</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="find" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>find</span><a href="#find" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="find.find-1">find<span class="tsd-signature-symbol">(</span>template<span class="tsd-signature-symbol">: </span><a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol">&gt;</span>, params<span class="tsd-signature-symbol">?: </span><a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="region_class.Region.html" class="tsd-signature-type" data-tsd-kind="Class">Region</a><span class="tsd-signature-symbol">&gt;</span><a href="#find.find-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="find.find-1">find<span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span>searchInput<span class="tsd-signature-symbol">: </span><a href="../types/screen_class.RegionResultFindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">RegionResultFindInput</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/screen_class.RegionResultFindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">RegionResultFindInput</a><span class="tsd-signature-symbol">&gt;</span>, params<span class="tsd-signature-symbol">?: </span><a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="region_class.Region.html" class="tsd-signature-type" data-tsd-kind="Class">Region</a><span class="tsd-signature-symbol">&gt;</span><a href="#find.find-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p><a href="screen_class.ScreenClass.html#find">find</a> will search for a single occurrence of a template image on a systems main screen</p>
+<div class="tsd-comment tsd-typography"><p><a href="screen_class.ScreenClass.html#find">find</a> will search for a single occurrence of a given search input on a systems main screen</p>
 </div>
+<div class="tsd-type-parameters">
+<h4 class="tsd-type-parameters-title">Type Parameters</h4>
+<section class="tsd-panel tsd-type-parameters">
+<h4>Type Parameters</h4>
+<ul class="tsd-type-parameters">
+<li>
+<h4>PROVIDER_DATA_TYPE</h4></li></ul></section></div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>template: <a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>Template Image instance</p>
+<h5>searchInput: <a href="../types/screen_class.RegionResultFindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">RegionResultFindInput</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/screen_class.RegionResultFindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">RegionResultFindInput</a><span class="tsd-signature-symbol">&gt;</span></h5>
+<div class="tsd-comment tsd-typography"><p>A <a href="../types/screen_class.FindInput.html">FindInput</a> instance</p>
 </div></li>
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> params: <a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a></h5>
-<div class="tsd-comment tsd-typography"><p>LocationParameters which are used to fine tune search region and / or match confidence</p>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> params: <a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<div class="tsd-comment tsd-typography"><p>OptionalSearchParameters which are used to fine tune search region and / or match confidence</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="region_class.Region.html" class="tsd-signature-type" data-tsd-kind="Class">Region</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/bfebdca/lib/screen.class.ts#L98">screen.class.ts:98</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="findAll" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>find<wbr/>All</span><a href="#findAll" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="findAll.findAll-1">find<wbr/>All<span class="tsd-signature-symbol">(</span>template<span class="tsd-signature-symbol">: </span><a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol">&gt;</span>, params<span class="tsd-signature-symbol">?: </span><a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="region_class.Region.html" class="tsd-signature-type" data-tsd-kind="Class">Region</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#findAll.findAll-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L160">screen.class.ts:160</a></li></ul></aside></li>
+<li class="tsd-signature tsd-anchor-link" id="find.find-2">find<span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span>searchInput<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>by<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;window&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>by<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;window&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span>, params<span class="tsd-signature-symbol">?: </span><a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="window_class.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">&gt;</span><a href="#find.find-2" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p><a href="screen_class.ScreenClass.html#findAll">findAll</a> will search for every occurrences of a template image on a systems main screen</p>
-</div>
+<div class="tsd-type-parameters">
+<h4 class="tsd-type-parameters-title">Type Parameters</h4>
+<section class="tsd-panel tsd-type-parameters">
+<h4>Type Parameters</h4>
+<ul class="tsd-type-parameters">
+<li>
+<h4>PROVIDER_DATA_TYPE</h4></li></ul></section></div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>template: <a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol">&gt;</span></h5>
-<div class="tsd-comment tsd-typography"><p>Template Image instance</p>
+<h5>searchInput: <span class="tsd-signature-symbol">{ </span>by<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;window&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>by<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;window&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> params: <a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="window_class.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L164">screen.class.ts:164</a></li></ul></aside></li>
+<li class="tsd-signature tsd-anchor-link" id="find.find-3">find<span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span>searchInput<span class="tsd-signature-symbol">: </span><a href="../types/screen_class.FindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">FindInput</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/screen_class.FindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">FindInput</a><span class="tsd-signature-symbol">&gt;</span>, params<span class="tsd-signature-symbol">?: </span><a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/screen_class.FindResult.html" class="tsd-signature-type" data-tsd-kind="Type alias">FindResult</a><span class="tsd-signature-symbol">&gt;</span><a href="#find.find-3" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-type-parameters">
+<h4 class="tsd-type-parameters-title">Type Parameters</h4>
+<section class="tsd-panel tsd-type-parameters">
+<h4>Type Parameters</h4>
+<ul class="tsd-type-parameters">
+<li>
+<h4>PROVIDER_DATA_TYPE</h4></li></ul></section></div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>searchInput: <a href="../types/screen_class.FindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">FindInput</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/screen_class.FindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">FindInput</a><span class="tsd-signature-symbol">&gt;</span></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> params: <a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/screen_class.FindResult.html" class="tsd-signature-type" data-tsd-kind="Type alias">FindResult</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L168">screen.class.ts:168</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="findAll" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>find<wbr/>All</span><a href="#findAll" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+<li class="tsd-signature tsd-anchor-link" id="findAll.findAll-1">find<wbr/>All<span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span>searchInput<span class="tsd-signature-symbol">: </span><a href="../types/screen_class.RegionResultFindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">RegionResultFindInput</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/screen_class.RegionResultFindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">RegionResultFindInput</a><span class="tsd-signature-symbol">&gt;</span>, params<span class="tsd-signature-symbol">?: </span><a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="region_class.Region.html" class="tsd-signature-type" data-tsd-kind="Class">Region</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#findAll.findAll-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p><a href="screen_class.ScreenClass.html#findAll">findAll</a> will search for every occurrence of a given search input on a systems main screen</p>
+</div>
+<div class="tsd-type-parameters">
+<h4 class="tsd-type-parameters-title">Type Parameters</h4>
+<section class="tsd-panel tsd-type-parameters">
+<h4>Type Parameters</h4>
+<ul class="tsd-type-parameters">
+<li>
+<h4>PROVIDER_DATA_TYPE</h4></li></ul></section></div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>searchInput: <a href="../types/screen_class.RegionResultFindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">RegionResultFindInput</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/screen_class.RegionResultFindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">RegionResultFindInput</a><span class="tsd-signature-symbol">&gt;</span></h5>
+<div class="tsd-comment tsd-typography"><p>A <a href="../types/screen_class.FindInput.html">FindInput</a> instance to search for</p>
 </div></li>
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> params: <a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a></h5>
-<div class="tsd-comment tsd-typography"><p>LocationParameters which are used to fine tune search region and / or match confidence</p>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> params: <a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<div class="tsd-comment tsd-typography"><p>OptionalSearchParameters which are used to fine tune search region and / or match confidence</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="region_class.Region.html" class="tsd-signature-type" data-tsd-kind="Class">Region</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/bfebdca/lib/screen.class.ts#L151">screen.class.ts:151</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L268">screen.class.ts:268</a></li></ul></aside></li>
+<li class="tsd-signature tsd-anchor-link" id="findAll.findAll-2">find<wbr/>All<span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span>searchInput<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>by<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;window&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>by<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;window&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span>, params<span class="tsd-signature-symbol">?: </span><a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="window_class.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#findAll.findAll-2" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-type-parameters">
+<h4 class="tsd-type-parameters-title">Type Parameters</h4>
+<section class="tsd-panel tsd-type-parameters">
+<h4>Type Parameters</h4>
+<ul class="tsd-type-parameters">
+<li>
+<h4>PROVIDER_DATA_TYPE</h4></li></ul></section></div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>searchInput: <span class="tsd-signature-symbol">{ </span>by<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;window&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>by<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;window&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> params: <a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="window_class.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L272">screen.class.ts:272</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="grab" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>grab</span><a href="#grab" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -246,7 +292,7 @@
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/bfebdca/lib/screen.class.ts#L278">screen.class.ts:278</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L549">screen.class.ts:549</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="grabRegion" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>grab<wbr/>Region</span><a href="#grabRegion" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -263,7 +309,7 @@
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/bfebdca/lib/screen.class.ts#L319">screen.class.ts:319</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L615">screen.class.ts:615</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="height" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>height</span><a href="#height" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -275,7 +321,7 @@ Screens with higher pixel density (e.g. retina displays in MacBooks) might have 
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/bfebdca/lib/screen.class.ts#L89">screen.class.ts:89</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L150">screen.class.ts:150</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="highlight" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>highlight</span><a href="#highlight" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -292,57 +338,109 @@ Screens with higher pixel density (e.g. retina displays in MacBooks) might have 
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="region_class.Region.html" class="tsd-signature-type" data-tsd-kind="Class">Region</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/bfebdca/lib/screen.class.ts#L208">screen.class.ts:208</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L383">screen.class.ts:383</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="on" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>on</span><a href="#on" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="on.on-1">on<span class="tsd-signature-symbol">(</span>templateImage<span class="tsd-signature-symbol">: </span><a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a>, callback<span class="tsd-signature-symbol">: </span><a href="../types/screen_class.FindHookCallback.html" class="tsd-signature-type" data-tsd-kind="Type alias">FindHookCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#on.on-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="on.on-1">on<span class="tsd-signature-symbol">(</span>searchInput<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>by<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;window&quot;</span><span class="tsd-signature-symbol"> }</span>, callback<span class="tsd-signature-symbol">: </span><a href="../types/screen_class.WindowCallback.html" class="tsd-signature-type" data-tsd-kind="Type alias">WindowCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#on.on-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p><a href="screen_class.ScreenClass.html#on">on</a> registers a callback which is triggered once a certain template image is found</p>
+<div class="tsd-comment tsd-typography"><p><a href="screen_class.ScreenClass.html#on">on</a> registers a callback which is triggered once a certain searchInput image is found</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>templateImage: <a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a></h5>
-<div class="tsd-comment tsd-typography"><p>Template image to trigger the callback on</p>
-</div></li>
+<h5>searchInput: <span class="tsd-signature-symbol">{ </span>by<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;window&quot;</span><span class="tsd-signature-symbol"> }</span></h5>
+<div class="tsd-comment tsd-typography"><p>to trigger the callback on</p>
+</div>
+<ul class="tsd-parameters">
+<li class="tsd-parameter">
+<h5>by<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> }</span></h5>
+<ul class="tsd-parameters">
+<li class="tsd-parameter">
+<h5>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span></h5></li></ul></li>
+<li class="tsd-parameter">
+<h5>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<li class="tsd-parameter">
+<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;window&quot;</span></h5></li></ul></li>
 <li>
-<h5>callback: <a href="../types/screen_class.FindHookCallback.html" class="tsd-signature-type" data-tsd-kind="Type alias">FindHookCallback</a></h5>
+<h5>callback: <a href="../types/screen_class.WindowCallback.html" class="tsd-signature-type" data-tsd-kind="Type alias">WindowCallback</a></h5>
 <div class="tsd-comment tsd-typography"><p>The <a href="../types/screen_class.FindHookCallback.html">FindHookCallback</a> function to trigger</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/bfebdca/lib/screen.class.ts#L240">screen.class.ts:240</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="waitFor" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>wait<wbr/>For</span><a href="#waitFor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="waitFor.waitFor-1">wait<wbr/>For<span class="tsd-signature-symbol">(</span>templateImage<span class="tsd-signature-symbol">: </span><a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol">&gt;</span>, timeoutMs<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, updateInterval<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, params<span class="tsd-signature-symbol">?: </span><a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="region_class.Region.html" class="tsd-signature-type" data-tsd-kind="Class">Region</a><span class="tsd-signature-symbol">&gt;</span><a href="#waitFor.waitFor-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L476">screen.class.ts:476</a></li></ul></aside></li>
+<li class="tsd-signature tsd-anchor-link" id="on.on-2">on<span class="tsd-signature-symbol">(</span>searchInput<span class="tsd-signature-symbol">: </span><a href="../types/screen_class.RegionResultFindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">RegionResultFindInput</a>, callback<span class="tsd-signature-symbol">: </span><a href="../types/screen_class.MatchResultCallback.html" class="tsd-signature-type" data-tsd-kind="Type alias">MatchResultCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#on.on-2" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p><a href="screen_class.ScreenClass.html#waitFor">waitFor</a> searches for a template image for a specified duration</p>
-</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>templateImage: <a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="image_class.Image.html" class="tsd-signature-type" data-tsd-kind="Class">Image</a><span class="tsd-signature-symbol">&gt;</span></h5>
+<h5>searchInput: <a href="../types/screen_class.RegionResultFindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">RegionResultFindInput</a></h5></li>
+<li>
+<h5>callback: <a href="../types/screen_class.MatchResultCallback.html" class="tsd-signature-type" data-tsd-kind="Type alias">MatchResultCallback</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L477">screen.class.ts:477</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="waitFor" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>wait<wbr/>For</span><a href="#waitFor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+<li class="tsd-signature tsd-anchor-link" id="waitFor.waitFor-1">wait<wbr/>For<span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span>searchInput<span class="tsd-signature-symbol">: </span><a href="../types/screen_class.RegionResultFindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">RegionResultFindInput</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/screen_class.RegionResultFindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">RegionResultFindInput</a><span class="tsd-signature-symbol">&gt;</span>, timeoutMs<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, updateInterval<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, params<span class="tsd-signature-symbol">?: </span><a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="region_class.Region.html" class="tsd-signature-type" data-tsd-kind="Class">Region</a><span class="tsd-signature-symbol">&gt;</span><a href="#waitFor.waitFor-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p><a href="screen_class.ScreenClass.html#waitFor">waitFor</a> searches for a template image for a specified duration</p>
+</div>
+<div class="tsd-type-parameters">
+<h4 class="tsd-type-parameters-title">Type Parameters</h4>
+<section class="tsd-panel tsd-type-parameters">
+<h4>Type Parameters</h4>
+<ul class="tsd-type-parameters">
+<li>
+<h4>PROVIDER_DATA_TYPE</h4></li></ul></section></div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>searchInput: <a href="../types/screen_class.RegionResultFindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">RegionResultFindInput</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/screen_class.RegionResultFindInput.html" class="tsd-signature-type" data-tsd-kind="Type alias">RegionResultFindInput</a><span class="tsd-signature-symbol">&gt;</span></h5>
 <div class="tsd-comment tsd-typography"><p>Filename of the template image, relative to ScreenClass.config.resourceDirectory, or an Image</p>
 </div></li>
 <li>
-<h5>timeoutMs: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 5000</span></h5>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> timeoutMs: <span class="tsd-signature-type">number</span></h5>
 <div class="tsd-comment tsd-typography"><p>Timeout in milliseconds after which <a href="screen_class.ScreenClass.html#waitFor">waitFor</a> fails</p>
 </div></li>
 <li>
-<h5>updateInterval: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 500</span></h5>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> updateInterval: <span class="tsd-signature-type">number</span></h5>
 <div class="tsd-comment tsd-typography"><p>Update interval in milliseconds to retry search</p>
 </div></li>
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> params: <a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a></h5>
-<div class="tsd-comment tsd-typography"><p>LocationParameters which are used to fine tune search region and / or match confidence</p>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> params: <a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<div class="tsd-comment tsd-typography"><p>OptionalSearchParameters which are used to fine tune search region and / or match confidence</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="region_class.Region.html" class="tsd-signature-type" data-tsd-kind="Class">Region</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/bfebdca/lib/screen.class.ts#L221">screen.class.ts:221</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L420">screen.class.ts:420</a></li></ul></aside></li>
+<li class="tsd-signature tsd-anchor-link" id="waitFor.waitFor-2">wait<wbr/>For<span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span>searchInput<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>by<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;window&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>by<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;window&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span>, timeoutMs<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, updateInterval<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, params<span class="tsd-signature-symbol">?: </span><a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="window_class.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">&gt;</span><a href="#waitFor.waitFor-2" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-type-parameters">
+<h4 class="tsd-type-parameters-title">Type Parameters</h4>
+<section class="tsd-panel tsd-type-parameters">
+<h4>Type Parameters</h4>
+<ul class="tsd-type-parameters">
+<li>
+<h4>PROVIDER_DATA_TYPE</h4></li></ul></section></div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>searchInput: <span class="tsd-signature-symbol">{ </span>by<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;window&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>by<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;window&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> timeoutMs: <span class="tsd-signature-type">number</span></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> updateInterval: <span class="tsd-signature-type">number</span></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> params: <a href="optionalsearchparameters_class.OptionalSearchParameters.html" class="tsd-signature-type" data-tsd-kind="Class">OptionalSearchParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type" data-tsd-kind="Type parameter">PROVIDER_DATA_TYPE</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="window_class.Window.html" class="tsd-signature-type" data-tsd-kind="Class">Window</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L426">screen.class.ts:426</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="width" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>width</span><a href="#width" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -354,7 +452,7 @@ Screens with higher pixel density (e.g. retina displays in MacBooks) might have 
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/bfebdca/lib/screen.class.ts#L80">screen.class.ts:80</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/nut-tree/nut.js/blob/651c61f/lib/screen.class.ts#L140">screen.class.ts:140</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -388,6 +486,7 @@ Screens with higher pixel density (e.g. retina displays in MacBooks) might have 
 <li class="tsd-kind-module"><a href="../modules/key_enum.html">key.enum</a></li>
 <li class="tsd-kind-module"><a href="../modules/keyboard_class.html">keyboard.class</a></li>
 <li class="tsd-kind-module"><a href="../modules/location_function.html">location.function</a></li>
+<li class="tsd-kind-module"><a href="../modules/logging_function.html">logging.function</a></li>
 <li class="tsd-kind-module"><a href="../modules/match_request_class.html">match-<wbr/>request.class</a></li>
 <li class="tsd-kind-module"><a href="../modules/match_result_class.html">match-<wbr/>result.class</a></li>
 <li class="tsd-kind-module"><a href="../modules/mouse_movement_function.html">mouse-<wbr/>movement.function</a></li>
@@ -409,6 +508,9 @@ Screens with higher pixel density (e.g. retina displays in MacBooks) might have 
 <li class="tsd-kind-module"><a href="../modules/provider_io_jimp_image_reader_class.html">provider/io/jimp-<wbr/>image-<wbr/>reader.class</a></li>
 <li class="tsd-kind-module"><a href="../modules/provider_io_jimp_image_writer_class.html">provider/io/jimp-<wbr/>image-<wbr/>writer.class</a></li>
 <li class="tsd-kind-module"><a href="../modules/provider_keyboard_provider_interface.html">provider/keyboard-<wbr/>provider.interface</a></li>
+<li class="tsd-kind-module"><a href="../modules/provider_log_provider_interface.html">provider/log-<wbr/>provider.interface</a></li>
+<li class="tsd-kind-module"><a href="../modules/provider_log_console_log_provider_class.html">provider/log/console-<wbr/>log-<wbr/>provider.class</a></li>
+<li class="tsd-kind-module"><a href="../modules/provider_log_noop_log_provider_class.html">provider/log/noop-<wbr/>log-<wbr/>provider.class</a></li>
 <li class="tsd-kind-module"><a href="../modules/provider_mouse_provider_interface.html">provider/mouse-<wbr/>provider.interface</a></li>
 <li class="tsd-kind-module"><a href="../modules/provider_native_clipboardy_clipboard_class.html">provider/native/clipboardy-<wbr/>clipboard.class</a></li>
 <li class="tsd-kind-module"><a href="../modules/provider_native_libnut_keyboard_class.html">provider/native/libnut-<wbr/>keyboard.class</a></li>
@@ -417,13 +519,15 @@ Screens with higher pixel density (e.g. retina displays in MacBooks) might have 
 <li class="tsd-kind-module"><a href="../modules/provider_native_libnut_window_class.html">provider/native/libnut-<wbr/>window.class</a></li>
 <li class="tsd-kind-module"><a href="../modules/provider_provider_registry_class.html">provider/provider-<wbr/>registry.class</a></li>
 <li class="tsd-kind-module"><a href="../modules/provider_screen_provider_interface.html">provider/screen-<wbr/>provider.interface</a></li>
+<li class="tsd-kind-module"><a href="../modules/provider_text_finder_interface.html">provider/text-<wbr/>finder.interface</a></li>
+<li class="tsd-kind-module"><a href="../modules/provider_window_finder_interface.html">provider/window-<wbr/>finder.interface</a></li>
 <li class="tsd-kind-module"><a href="../modules/provider_window_provider_interface.html">provider/window-<wbr/>provider.interface</a></li>
+<li class="tsd-kind-module"><a href="../modules/query_class.html">query.class</a></li>
 <li class="tsd-kind-module"><a href="../modules/region_class.html">region.class</a></li>
 <li class="tsd-kind-module"><a href="../modules/rgba_class.html">rgba.class</a></li>
 <li class="tsd-kind-module"><a href="../modules/scaled_match_result_class.html">scaled-<wbr/>match-<wbr/>result.class</a></li>
 <li class="current tsd-kind-module"><a href="../modules/screen_class.html">screen.class</a></li>
 <li class="tsd-kind-module"><a href="../modules/sleep_function.html">sleep.function</a></li>
-<li class="tsd-kind-module"><a href="../modules/typings.html">typings</a></li>
 <li class="tsd-kind-module"><a href="../modules/util_bresenham_class.html">util/bresenham.class</a></li>
 <li class="tsd-kind-module"><a href="../modules/util_linehelper_class.html">util/linehelper.class</a></li>
 <li class="tsd-kind-module"><a href="../modules/util_timeout_function.html">util/timeout.function</a></li>
